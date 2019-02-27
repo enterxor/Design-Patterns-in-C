@@ -4,8 +4,6 @@
 
 - [Design-Patterns-in-C](#design-patterns-in-c)
   - [C oop implement:](#c-oop-implement)
-- [](#)
-- [  member           -                +       +](#member-----------------------------------)
   - [Quick Start:](#quick-start)
   - [Make a pattern](#make-a-pattern)
   - [Auto Generate class](#auto-generate-class)
