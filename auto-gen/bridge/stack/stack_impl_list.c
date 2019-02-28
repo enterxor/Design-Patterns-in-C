@@ -95,7 +95,7 @@ static struct stack_impl_ops stack_impl_ops = {
 
 void stack_impl_list_init(struct stack_impl_list *stack_impl_list)
 {
-	memset(stack_impl_list, sizeof(*stack_impl_list), 0);
+	memset(stack_impl_list, 0, sizeof(*stack_impl_list));
 	stack_impl_init(&stack_impl_list->stack_impl);
 	CLASS_OPS_INIT_SUPER(stack_impl_list->stack_impl.ops, stack_impl_ops);
 }

@@ -86,7 +86,7 @@ void stack_init(struct stack *stack, const char *stack_impl)
 {
 	struct stack_impl_array *array;
 	struct stack_impl_list *list;
-	memset(stack, sizeof(*stack), 0);
+	memset(stack, 0, sizeof(*stack));
 	stack->ops = &stack_ops;
 
 	stack->_impl = 0;

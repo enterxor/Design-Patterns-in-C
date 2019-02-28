@@ -11,7 +11,7 @@ static struct product_cache_ops product_cache_ops = {0
 
 void product_cache_init(struct product_cache *product_cache)
 {
-	memset(product_cache, sizeof(*product_cache), 0);
+	memset(product_cache, 0, sizeof(*product_cache));
 	product_cache->ops = &product_cache_ops;
 }
 

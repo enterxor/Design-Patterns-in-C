@@ -33,7 +33,7 @@ The classes and/or objects participating in this pattern are:
 void mortgage_init(struct mortgage *m)
 {
 	_MY_TRACE_STR("mortgage_init()\n");
-	memset(m, sizeof(*m), 0);
+	memset(m, 0, sizeof(*m));
 
 	m->_bank = malloc(sizeof(*m->_bank));
 	bank_init(m->_bank);

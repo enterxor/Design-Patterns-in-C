@@ -7,7 +7,7 @@ DEBUGMODE = 1
 
 G_MACROS  =
 G_INCS    = $(TOPDIR)util .
-G_LIBDIRS = $(TOPDIR)util
+G_LIBDIRS = $(TOPDIR)/$(OUTDIR)util
 G_LIBS    = util
 G_CPPFLAGS= -Wall -Werror -Wextra -Wmissing-prototypes -Wstrict-prototypes -Wunused-value -Wno-unused-parameter -Wformat \
   -Wfloat-equal -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wredundant-decls

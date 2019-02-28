@@ -47,7 +47,7 @@ static struct subject_ops subject_ops = {
 void proxy_init(struct proxy *proxy)
 {
 	_MY_TRACE_STR("proxy_init()\n");
-	memset(proxy, sizeof(*proxy), 0);
+	memset(proxy, 0, sizeof(*proxy));
 	subject_init(&proxy->subject);
 	CLASS_OPS_INIT(proxy->subject.ops, subject_ops);
 }

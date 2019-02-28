@@ -31,7 +31,7 @@ STACK_IMPL(stack_op, struct operand *, 128);
 void caculator_init(struct caculator *caculator)
 {
 	_MY_TRACE_STR("caculator_init()\n");
-	memset(caculator, sizeof(*caculator), 0);
+	memset(caculator, 0, sizeof(*caculator));
 }
 
 /** return bool */

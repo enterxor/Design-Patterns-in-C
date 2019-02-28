@@ -24,7 +24,7 @@ static struct factory_ops factory_ops = {
 
 void factory_product_2_init(struct factory_product_2 *factory_product_2)
 {
-	memset(factory_product_2, sizeof(*factory_product_2), 0);
+	memset(factory_product_2, 0, sizeof(*factory_product_2));
 	factory_init(&factory_product_2->factory);
 	CLASS_OPS_INIT(factory_product_2->factory.ops, factory_ops);
 }

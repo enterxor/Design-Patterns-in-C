@@ -27,7 +27,7 @@
 /** constructor(). */
 void student_controller_init(struct student_controller *student_controller, struct student *model, struct student_view *view)
 {
-	memset(student_controller, sizeof(*student_controller), 0);
+	memset(student_controller, 0, sizeof(*student_controller));
 	student_controller->_model = model;
 	student_controller->_view = view;
 }

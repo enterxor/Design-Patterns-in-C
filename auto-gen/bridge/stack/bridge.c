@@ -19,7 +19,7 @@
 
 void bridge_init(struct bridge *bridge)
 {
-	memset(bridge, sizeof(*bridge), 0);
+	memset(bridge, 0, sizeof(*bridge));
 }
 
 void bridge_main_entry(void)
